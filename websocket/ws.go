@@ -24,7 +24,7 @@ func main() {
 	godotenv.Load()
 	http.HandleFunc("/echo", func(res http.ResponseWriter, req *http.Request) {
 		conn, _ := upgrader.Upgrade(res, req, nil)
-
+		
 		for {
 			msgType, msg, err := conn.ReadMessage()
 			if err != nil {
@@ -39,6 +39,7 @@ func main() {
 	})
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Println(r.Host)
 		http.ServeFile(w, r, "./websocket.html")
 	})
 
