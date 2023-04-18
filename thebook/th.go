@@ -11,8 +11,14 @@ import (
 func main() {
 
 	// SCANNER FUNCTION
-
 	// util vars
+
+	var name string = nil
+	fmt.Println(name)
+
+	return
+
+
 	var (
 		names [10]string
 		index int  = 1
