@@ -12,10 +12,6 @@ func main() {
 
 	// SCANNER FUNCTION
 	// util vars
-
-	var name string = nil
-	fmt.Println(name)
-
 	return
 
 
