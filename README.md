@@ -1,1 +1,1 @@
-I am learning the go programming language
+Get to know both the basics and advanced concepts of `go`, the programming language
