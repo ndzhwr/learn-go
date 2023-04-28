@@ -2,7 +2,6 @@ package main
 
 import (
 	"errors"
-	"fmt"
 )
 
 func DiscountedPrice(price float64, discountRate float64) (float64, error) {
@@ -18,10 +17,4 @@ func DiscountedPrice(price float64, discountRate float64) (float64, error) {
 	newPrice := price - discount
 	return newPrice, nil
 
-}
-
-func main() {
-
-	result, err := DiscountedPrice(1000, 0.6)
-	fmt.Println(result, err)
 }
