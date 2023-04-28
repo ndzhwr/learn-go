@@ -31,7 +31,6 @@ func TestDiscountPrice(t *testing.T) {
 				t.Errorf("DiscountedPrice(%.2f , %.2f) must return %.2f", tc.price, tc.discount, tc.expected)
 
 			}
-
 		})
 	}
 
